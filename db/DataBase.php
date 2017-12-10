@@ -15,11 +15,7 @@
       echo "Éxito: Se realizó una conexión apropiada a MySQL! La base de datos mi_bd es genial." . PHP_EOL;
       echo "Información del host: " . mysqli_get_host_info($connect) . PHP_EOL;
 
-      mysqli_close($connect);
+      return $connect;
     }
   }
-
-  /* Prueba */
-  $db = new DataBase();
-  $db -> connect();
 ?>
