@@ -26,9 +26,4 @@
     }
 
   }
-
-  /* Prueba */
-  $person = new Person_Model();
-  $data = $person -> get_people();
-  echo '<pre>'; var_dump( $data ); echo '<pre>';
 ?>
