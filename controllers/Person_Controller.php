@@ -3,5 +3,7 @@
   require_once 'models/Person_Model.php';
   $person = new Person_Model();
   $data = $person -> get_people();
-  echo '<pre>'; var_dump( $data ); echo '<pre>';
+
+  # Llamada a la Vista
+  require_once 'views/people-view.phtml';
 ?>
